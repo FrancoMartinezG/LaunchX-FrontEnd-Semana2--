@@ -1,0 +1,656 @@
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 8.6% 0 9.5%;
+}
+body {
+  background-color: white;
+}
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 27px 14.2%;
+  background-color: #ffffffe5;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.logo {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1em;
+  color: #015bcb;
+  margin-right: auto;
+  margin-left: 60px;
+}
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 27px;
+}
+
+.nav-links li .links {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.25em;
+  font-stretch: expanded;
+  text-decoration: none;
+  color: gray;
+}
+.nav-links li a {
+  transition: all 0.3s ease 0;
+}
+.nav-links li a:hover {
+  color: #000000;
+}
+button {
+  font-weight: 500;
+  font-size: 20px;
+
+  text-decoration: none;
+  color: white;
+  background-color: #015bcb;
+  border: none;
+  border-radius: 7px;
+  padding: 18px 37px;
+  cursor: pointer;
+  transition: all 0.3s ease 0;
+  margin-left: 29px;
+  margin-right: 40px;
+}
+button:hover {
+  box-shadow: 1px 1px 10px #015bcb;
+}
+/* Primer pantalla */
+.pantalla-dividida {
+  display: flex;
+  height: 70em;
+}
+/* Izquierda */
+.izquierda {
+  background-color: white;
+  
+  width: 51%;
+  padding-top: 10rem;
+}
+.texto {
+  padding: 7% 19%;
+}
+.texto h1 {
+  font-size: 4.1em;
+  font-weight: 700;
+  height: 50%;
+  color: #1f3e72;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+}
+.texto p {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  color: #6e7c94;
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding-right: 11px;
+}
+.texto .subtexto {
+  display: flex;
+
+  font-size: 0.8em;
+  font-weight: 600;
+  /* margin-bottom: 10em; */
+  margin-bottom: 27%;
+}
+.texto .subtexto p {
+  color: #1f3e72;
+  margin-right: 50px;
+}
+
+.texto .subtexto .fa-solid {
+  color: gold;
+  box-shadow: 0px 10px 20px -8px gold;
+  background-color: #fffcef;
+  padding: 5px;
+  font-size: 0.9em;
+  margin-right: 1em;
+}
+/* Dropdown */
+.registro {
+  display: inline-block;
+}
+
+.registro-select .textRegisro {
+  display: flex;
+}
+.registro:hover .registro-lista {
+  opacity: 1;
+  visibility: visible;
+}
+.registro .select {
+  color: #1f3e72;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+.registro .select .fa-clock {
+  color: #3454d2;
+  background-color: #f0f4ff;
+  padding: 7px;
+  font-size: 0.7em;
+  margin-right: 1em;
+  margin-bottom: 1.3em;
+}
+.registro .select .fa-clock:hover {
+  box-shadow: 0px 10px 20px -8px #3454d2;
+  transition: all 0.5s;
+}
+.registro-lista {
+  border-radius: 4px;
+  background-color: #ffffffe5;
+  box-shadow: 0px 10px 20px -8px #1f3e72 ;
+  display: flex;
+  ;
+  padding: 3em 2.5em;
+  align-content: center;
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear, visibility 0.2s linear;
+  width: 51%;
+
+  position: absolute;
+}
+.registro-lista .item {
+  
+  font-size: 1.4em;
+  margin: auto;
+  color: #6e7c94;
+  padding-right: 5.3em;
+}
+.registro-lista .item2 {
+  
+  font-size: 1.4em;
+  margin: auto;
+  color: #6e7c94;
+  padding-right: em;
+  
+}
+.registro-lista .item3 {
+  
+  font-size: 1.4em;
+  margin: auto;
+  color: #6e7c94;
+  
+}
+
+.input{
+  border:none ;
+  
+  background-color: #ffffff;
+  color: #1f3e72;
+  font-size: 1.6em;
+  font-weight: 600;
+  padding: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1.8em;
+  width: 80%;
+}
+.input2{
+  border: none;
+  background-color: #ffffff00;
+  color: #1f3e72;
+  font-size: 1.6em;
+  font-weight: 600;
+  padding: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2.1em;
+  width: 78%;
+
+}
+.input-fecha{
+  border: none;
+  
+  background-color: #ffffff00;
+  color: #1f3e72;
+  font-size: 1.6em;
+  font-weight: 900;
+  padding: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1.5em;
+  width: 80%;
+}
+.fa-location-dot{
+  color: #3454d2;
+  background-color: #f0f4ff;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: .9em;
+  margin-right: .9em;
+  margin-bottom: .7em;
+}
+.fa-syringe{
+  color: #3454d2;
+  background-color: #f0f4ff;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: .9em;
+  margin-right: .9em;
+  margin-bottom: .5em;
+}
+.fa-calendar-days{
+  color: #3454d2;
+  background-color: #f0f4ff;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: .9em;
+  margin-right: .9em;
+  margin-bottom: .7em;
+}
+.submit{
+  
+  font-weight: 500;
+  font-size: 20px;
+  
+  text-decoration: none;
+  color: white;
+  background-color: #015bcb;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 10px;
+  width: 10em;
+  height: 3.5em;
+  margin: 1.4em 0em 0 3em ;
+  cursor: pointer;
+  transition: all 0.3s ease 0;
+}
+/* Derecha */
+.derecha {
+  background-image: url("/imagenes/doctora\ fondo.jpg");
+  background-color: #118fe4;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+
+  width: 49%;
+  
+}
+
+/* PANTALLA 2 */
+
+.vacuna{
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: auto;
+
+}
+.pantalla-2{
+  
+  background-color: white;
+  
+  
+}
+.texto-2 {
+  padding: 2% 0% 0 8.8%;
+  
+}
+.texto-2 h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  height: 70%;
+  color: #1f3e72;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+}
+.texto-2 p {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  color: #6e7c94;
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding-right: 55%;
+}
+.card-container{
+  padding: 0 0 0 7.5%;
+  
+  
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+ 
+  margin: auto;
+
+}
+.card-container .card{
+  width: 230px;
+  padding: 30px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, o.2);
+    overflow: hidden;
+    margin: 20px;
+    
+    transition: all 0.25s;
+    background-color: #ffffff;
+    
+}
+.card-container .card .p1{
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-top: 0;
+  color: #1f3e72;
+  line-height: 1.2em;
+}
+.card-container .card p{
+  font-size: 1em;
+  color: #6e7c94;
+}
+.card-container i{
+  color: #3454d2;
+  background-color: #f0f4ff;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: 1.7em;
+  margin-right: .9em;
+  margin-bottom: .7em;
+}
+.card:hover{
+  box-shadow: 0px 10px 20px -8px #3454d2;
+  transition: all 0.5s;
+  
+}
+
+/* PANTALLA 3 */
+.pantalla-3{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 70em;
+  margin-bottom: 100px;
+}
+/* LADO IZQUIERDO */
+.izquierda-2{
+
+    background-image: url("/imagenes/front-view-young-woman-sterile-mask-yellow-wall.png"), linear-gradient(#fff 35%, #118fe4 65%) ;
+    
+    background-size:cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+  
+    width: 40%;  
+}
+/* LADO DERECHO */
+.derecha-2 {
+  background-color: white;
+  width: 59%;
+
+}
+.texto-3{
+   padding: 7% 19%;
+
+}
+.texto-3 h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  
+  color: #1f3e72;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+  
+}
+.texto-3 p {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  color: #6e7c94;
+  margin-top: 0;
+  margin-bottom: 60px;
+  
+}
+/* COLLAPSE */
+.container1{
+  width: auto !important;
+}
+.panel{
+  font-family: "Poppins", sans-serif !important;
+  border: none !important;
+}
+.panel-group .panel+.panel {
+ margin-top: 2em !important;
+}
+.panel:hover{
+  box-shadow: 0px 10px 20px -13px #3454d2;
+  transition: all 0.5s;
+}
+.panel-heading{
+  background-color: transparent !important;
+  height:  4em!important;
+}
+.panel-title a{
+  color: #1f3e72 !important;
+  text-decoration: none !important;
+}
+.panel-title i{
+  color: #3454d2;
+  background-color: #f0f4ff;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: 1em;
+  margin-right: .9em;
+  margin-bottom: .7em;
+
+}
+.panel-body{
+  color: #6e7c94;
+}
+
+/* PANTALLA 4 */
+.pantalla-4{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 60em;
+}
+/* LADO IZQUIERDO */
+.derecha-3{
+
+    background-image: url("/imagenes/wepik-2022210-215640_ccexpress.png"), linear-gradient(#fff 35%, #118fe4 65%) ;
+    
+    background-size:cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+  
+    width: 50%;  
+}
+/* LADO DERECHO */
+.izquierda-3 {
+  background-color: white;
+  width: 59%;
+  
+}
+.texto-4{
+  
+  padding: 7% 17% 7% 17%;
+
+}
+.texto-4 h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  
+  color: #1f3e72;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+  
+}
+.texto-4 p {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  color: #6e7c94;
+  margin-top: 0;
+  margin-bottom: 0px;
+  
+}
+/* CARDS  */
+.card-container2{
+  padding: 0;
+  margin-top: 10em;
+  
+  
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+ 
+  
+
+}
+.card-container2 .card2{
+  width: 258px;
+  padding: 30px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, o.2);
+    overflow: hidden;
+    margin: 10px;
+    
+    transition: all 0.25s;
+    background-color: #ffffff;
+    
+    
+}
+.card-container2 .card2 .p1{
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-top: 0;
+  color: #1f3e72;
+  line-height: 1.2em;
+}
+
+.card2 .card-img{
+  display: flex;
+}
+.card2 .a{
+  font-size: .7em;
+  color: #6e7c94;
+}
+.card-container2 i{
+  color: #3454d2;
+  background-color: #f0f4ff;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: 1.7em;
+  margin-right: .9em;
+  margin-bottom: .7em;
+  
+}
+
+.card2 .call{
+  background-color: #f0f4ff ;
+  color: #015bcb;
+  margin: 1em 0 0 0;
+  padding: 18px 20px;
+  width: 10em;
+  
+}
+
+.call:hover{
+background-color: #015bcb;
+color: #fff;
+}
+.card2:hover{
+  box-shadow: 0px 10px 20px -8px #3454d2;
+  transition: all 0.5s;
+  
+}
+.container .col h1{
+  margin-top: 0;
+  
+}
+.container .row .col .text-muted{
+  margin-bottom: 2em !important;
+}
+.my-5 {
+  margin-top: 3em!important;
+  margin-bottom: 0!important;
+}
+.py-5 {
+  padding-top: 3rem!important;
+  padding-bottom: 0!important;
+}
+.py-3 {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+.my-4 {
+  margin-top: 0!important;
+  margin-bottom: 1.5rem!important;
+}
+@media (max-width: 1870px){
+  .registro-lista{
+    width: auto;
+  }
+}
+@media (max-width: 1250px){
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  .pantalla-3{
+    display: block;
+    background-image: url("/imagenes/front-view-young-woman-sterile-mask-yellow-wall.png"), linear-gradient(#fff 35%, #118fe4 65%) ;
+    
+    background-size:cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 70em;
+  }
+  .container1{
+    width: auto
+  }
+  .panel-title i{
+    display: none;
+    visibility: hidden;
+  }
+  .derecha-2{
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.932);
+    height: 70em;
+  }
+  .pantalla-dividida{
+    display: block;
+    background-image: url('/imagenes/front-view-female-nurse-white-medical-suit-with-red-mask-injection-her-hands-blue_ccexpress.png');
+    background-color: #118fe4;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 70em;
+  }
+  .registro-lista{
+    display: grid;
+    padding: 3em 3em;
+    grid-template-areas: 1fr ;
+    
+  }
+  .location, .date, .Vaccine{
+    margin-bottom: 20px;
+  }
+  
+  .izquierda{
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.932);
+    height: 70em;
+  }
+  .derecha{
+    visibility: hidden;
+  }
+}
