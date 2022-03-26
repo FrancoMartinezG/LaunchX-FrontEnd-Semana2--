@@ -274,7 +274,7 @@ button:hover {
 }
 /* Derecha */
 .derecha {
-  background-image: url("/imagenes/doctora\ fondo.jpg");
+  background-image: url(../imagenes/doctora\ fondo.jpg);
   background-color: #118fe4;
   background-size: cover;
   background-position: top;
@@ -381,7 +381,7 @@ button:hover {
 /* LADO IZQUIERDO */
 .izquierda-2{
 
-    background-image: url("/imagenes/front-view-young-woman-sterile-mask-yellow-wall.png"), linear-gradient(#fff 35%, #118fe4 65%) ;
+    background-image: url(../imagenes/front-view-young-woman-sterile-mask-yellow-wall.png), linear-gradient(#fff 35%, #118fe4 65%) ;
     
     background-size:cover;
     background-position: bottom;
@@ -464,7 +464,7 @@ button:hover {
 /* LADO IZQUIERDO */
 .derecha-3{
 
-    background-image: url("/imagenes/wepik-2022210-215640_ccexpress.png"), linear-gradient(#fff 35%, #118fe4 65%) ;
+    background-image: url(../imagenes/wepik-2022210-215640_ccexpress.png), linear-gradient(#fff 35%, #118fe4 65%) ;
     
     background-size:cover;
     background-position: bottom;
@@ -607,7 +607,7 @@ color: #fff;
   }
   .pantalla-3{
     display: block;
-    background-image: url("/imagenes/front-view-young-woman-sterile-mask-yellow-wall.png"), linear-gradient(#fff 35%, #118fe4 65%) ;
+    background-image: url(../imagenes/front-view-young-woman-sterile-mask-yellow-wall.png), linear-gradient(#fff 35%, #118fe4 65%) ;
     
     background-size:cover;
     background-position: bottom;
@@ -628,7 +628,7 @@ color: #fff;
   }
   .pantalla-dividida{
     display: block;
-    background-image: url('/imagenes/front-view-female-nurse-white-medical-suit-with-red-mask-injection-her-hands-blue_ccexpress.png');
+    background-image: url(../imagenes/front-view-female-nurse-white-medical-suit-with-red-mask-injection-her-hands-blue_ccexpress.png);
     background-color: #118fe4;
     background-size: cover;
     background-position: top;
